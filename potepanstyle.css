@@ -1,0 +1,467 @@
+a{
+  color: black;
+  text-decoration: none;
+}
+body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+div, h2, p, ul, li, img{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.Header{
+  width: 100%;
+  position: absolute;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.HeaderContainer{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 36px 0 36px;
+  max-width: 100%;
+}
+
+.HeaderContainer>*:last-child{
+  display: inline-flex;
+}
+.HeaderLogo__image--pc{
+  display: block;
+  height: 20px;
+  width: auto;
+  transition: opacity 0.2s;
+}
+.HeaderLogo__image--pc:hover{
+  opacity: 0.8; 
+}
+.HeaderLogo__image--sp {
+  display: none;
+  height: 16px;
+  width: auto;
+}
+
+.HeaderNavList{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.HeaderNavListItem{
+  margin-right: 45px;
+}
+.HeaderNavListItem:hover{
+  opacity: 0.8;
+}
+.HeaderNavListItem:last-of-type{
+  margin-right: 0px;
+}
+.HeaderNavListItem__link{
+  display: block;
+}
+.HeaderNavListItem__link span{
+  display: block;
+  text-align: center;
+  font-weight:700;
+}
+.HeaderNavListItem__link span:first-of-type{
+ font-family: 'Lato', sans-serif; 
+}
+.HeaderNavListItem__link span:last-child{
+  font-size: 10px;
+}
+.HeaderNavListItem__button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #F79214;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 40px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+
+.FirstView{
+  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+.FirstView__container {
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.FirstViewContent{
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+.FirstViewContent__title{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.FirstView__main-image--sp {
+  display: none;
+}
+.FirstView__main-image{
+  width: 100%;
+}
+.FirstViewContent__images{
+  margin-bottom: 25px;
+}
+
+.FirstViewContent__images img:nth-child(2){
+  width:40%;
+}
+
+.FirstViewContent__images img{
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.FirstViewContent__images img:last-of-type{
+  margin-right: 0;
+}
+
+.FirstViewContent__buttons{
+  display: flex;
+  transition: opacity 0.2s;
+}
+.FirstViewContent__buttons:hover{
+  opacity: 0.8;
+}
+
+.FirstViewContent__buttons a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: #F79214;
+  height: 64px;
+  border-radius: 35px;
+  font-size: 16px;
+  justify-content: center;
+  font-weight: 700;
+}
+.FirstViewContent__buttons>a:nth-child(1) {
+  margin-right: 15px;
+  width: 306px;
+}
+.FirstViewContent__buttons>a:nth-child(2) {
+  border: 1px solid #E0E0E0;
+  color: black;
+  background-color: white;
+  width: 176px;
+}
+
+
+.FirstViewCaption {
+  font-size: 12px;
+  color: #A2A2A4;
+}
+
+.FirstViewCaption a {
+  color: #A2A2A4;
+}
+
+
+.AboutWrapper {
+  background-color: #F79214;
+  padding: 45px 0;
+}
+.About {
+  display: flex;
+  position: relative;
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.About__title{
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.About__title h2 {
+  font-size: 40px;
+  width: 100%;
+  letter-spacing: 1px;
+  line-height: 74px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.About__title span{
+  font-size: 50px;
+  font-weight: 900;
+}
+.About__title br{
+  display: none;
+}
+.About__title  p{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+.About__title h2, .About__title p{
+  color: white;
+  text-align:left;
+}
+
+.About__button{
+  width:250px;
+  transition: opacity 0.2s;
+}
+.About__button:hover{
+  opacity: 0.8;
+}
+
+.About__button a{
+  display: flex;
+  color: #F79214;
+  font-size: 16px;
+  background-color: white;
+  height: 64px;
+  border-radius: 38px;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  width:100%;
+  align-items: center;
+}
+
+.About__button span:first-of-type{
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.About__button span:last-of-type{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+*, *::after, *::before{
+  word-break: break-all;
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 767px) {
+  .Header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .HeaderContainer{
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  .HeaderLogo__image--pc{
+    display: none;
+  }
+  .HeaderLogo__image--sp{
+    display: block;
+  }
+  .HeaderNavList{
+    top: 52px;
+  }
+  main{
+    padding-top: 52px;
+  }
+  .FirstView{
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+  .FirstView__main-image--sp{
+    display: block;
+  }
+  .FirstView__container{
+    margin-top: -45vw;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .FirstViewContent{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .FirstViewContent__title{
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+  }
+  .FirstViewContent__images{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .FirstViewContent__images img{
+    width: 27.5%;
+  }
+  .FirstViewContent__buttons{
+    flex-direction: column;
+  }
+  .FirstViewContent__buttons a:first-of-type{
+    margin-right: 0;
+  }
+  .FirstViewContent__buttons a:last-of-type{
+    display: none;
+  }
+  .FirstViewContent__buttons a{
+    font-size: 14px;
+    width: 100% !important;
+  }
+  .AboutWrapper{
+    padding: 30px 0;
+  }
+  .About{
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .About__title{
+    margin-bottom: 45px;
+  }
+  .About__title h2{
+    font-size: 30px !important;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .About__title h2>span{
+    font-size: 33px;
+    letter-spacing: 1px;
+  }
+  .About__title br{
+    display: block;
+  }
+  .About__title p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+ }
+
+ @media screen and (max-width: 1024px) {
+  .About{
+    flex-direction: column;
+  }
+  .About__title{
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .About__button{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .Header{
+    background-color: white;
+    z-index: 10;
+  }
+  .Header--common{
+    position: fixed;
+  }
+  .HeaderNavHamburger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+  }
+  .HeaderNavHamburger__line:first-child{
+    top: 0;
+  }
+  .HeaderNavHamburger__line:last-child{
+    top: 100%;
+  }
+  .HeaderNavHamburger__line{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .HeaderNavList{
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    z-index: 99;
+    height: 100%;
+  }
+  .HeaderNavListItem{
+    margin-right: 0;
+  }
+  .HeaderNavListItem__link{
+    padding: 20px 0;
+  }
+  .HeaderNavHamburger__line>span:first-child{
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: white;
+  }
+  .HeaderNavHamburger__line>span:last-child{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #F79214;
+    letter-spacing: 2px;
+  }
+  .HeaderNavListItem:last-of-type{
+    margin-top: 20px;
+  }
+  .HeaderNavListItem__button{
+    font-size: 16px;
+    margin: 0 auto;
+    height: 60px;
+    width: 250px;
+  }
+  main{
+    padding-top: 60px;
+  }
+}
+
