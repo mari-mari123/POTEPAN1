@@ -283,6 +283,7 @@ img {
   }
   .Header{
     background-color: white;
+    z-index: 100;
   }
   .HeaderNavHamburger {
     display: block;
@@ -308,6 +309,12 @@ img {
   .HeaderNavList {
     position: fixed;
     display: block;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    height: 100%;
   }
 
   .HeaderNavListItem__link {
@@ -440,7 +447,7 @@ img {
 
  }
 
- .Header {
+.Header {
   width: 100%;
   position: absolute;
 }
